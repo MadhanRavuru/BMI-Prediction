@@ -1,0 +1,21 @@
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.poetry]
+name = "Caire coding task"
+version = "0"                               # versioning is done via git tags
+description = "BMI prediction"
+authors = ["Madhan Ravuru <madhanravuru18@gmail.com>"]
+readme = "README.md"
+package-mode = false
+
+[tool.poetry.dependencies]
+python = ">=3.10,<3.11"
+ipykernel = "^6.29.0"
+numpy = "^1.23.4"
+matplotlib = "3.8.2"
+torch = "^1.11.0"
+torchvision= "^0.12.0"
+scikit-learn= "1.3.2"
+pandas= "2.1.0"
