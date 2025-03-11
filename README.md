@@ -27,4 +27,3 @@ Testing is clearly described in the juypter notebook. Load the model _bmipredict
 Though, the error values are less, they can be further improved by increasing the dataset and including additional information (age, medical history, etc).
 Scatter plot between True and Predicted BMIs on validation set can be seen below ![scatter](scatter_plot.png). We can see linear correlation between GT and predictions, suggesting that the model performance is good. Note that the test distribution might be out-of-data distribution. Then, the test results might be bad. We need to train the model using domain adaptation as a result.
 
-
