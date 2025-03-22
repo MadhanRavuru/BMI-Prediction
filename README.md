@@ -5,6 +5,25 @@ The project requirements can be found in pyproject.toml and can be installed eas
 
 Run the notebook _bmi_prediction.ipynb_ after installing the project dependencies.
 
+## Deployment
+
+### BMI Prediction App  
+
+The **BMI Prediction App** is a machine-learning-based application that predicts BMI from facial images. Check it out [here](https://huggingface.co/spaces/Madhan18/bmi-predictor). Note that the results are not accurate enough, as the model is trained only on limited data.
+
+### Summary  
+- **Built with:** FastAPI for the backend and an ONNX model for inference. You can find the necessary files inside _deployment_ folder.
+- **Containerized with:** Docker (using a Dockerfile).
+- **Deployment:** Hosted on Hugging Face Spaces.
+
+### How it Works  
+1. User uploads an image.
+2. The image is preprocessed and fed into the ONNX model.
+3. The model predicts BMI, which is then converted back to a human-readable format.
+4. The result is displayed on a simple web interface.
+
+By containerizing the app with **Docker** and deploying it on **Hugging Face**, we ensure scalability, easy deployment, and accessibility. 🚀
+
 
 ## Network
 Pretrained [MobileNet V3 large](https://arxiv.org/abs/1905.02244) on ImageNet is used as backbone for BMI prediction. The network is capable of predicting gender of person as well along with bmi prediction. These gender features are concatentated to feature extractor of backbone network.
